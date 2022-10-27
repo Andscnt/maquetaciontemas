@@ -336,19 +336,22 @@ hr{
         background-color: rgba(13,89,221,0.4);
         opacity: 100%;
     }
-    .fotoTeam:hover .fondoazul{
-        opacity: 100%;
-        background-color: rgba(13,89,221,0.4);
-
-    }
     .redes{
         right: 0px;
+        z-index: 2;
     }
     .planes article{
         border: #0c61dd 1px solid;
     }
+    .planes article:hover .parrafo{
+        border: #eee 1px solid;
+        box-shadow: none;
+    }
     .planes a{
         background-color: #0c61dd;
         color: #fff;
+    }
+    .fotosEscala:hover img{
+        transform: scale(1);
     }
 }
