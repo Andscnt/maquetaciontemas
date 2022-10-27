@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+.ancho{
+    max-width: 1200px;
+    margin: auto;
+}
+/*CONTENIDO*/
+header{
+    padding: 20px;
+    /*border: #333 1px solid;*/
+}
+.contTitulo{
+    margin: auto;
+    max-width: 450px;
+    padding: 10px;
+   /* border: #333 1px solid;*/
+}
+.contTitulo h4{
+    color: #0c61dd;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+}
+.contTitulo h1{
+    text-align: center;
+    color: #000;
+    line-height: 45px;
+    font-size: 35px;
+    font-weight: 700;
+}
+hr{
+    margin: auto;
+    width: 70px;
+    height: 5px;
+    background-color: #d6ccf0;
+    border: #d6ccf0;
+}
+.contGaleria{
+    /*padding: 10px;*/
+    /*border: #333 1px solid;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+.galeria{
+    max-width: 370px;
+    margin: 0;
+    position: relative;
+    transition: all 0.5s;
+    /*border: #333 1px solid;*/
+}
+.galeria:hover{
+    filter: grayscale(100%);
+}
+.galeria:hover .hvgris{
+    cursor: pointer;
+    opacity: 100%;
+}
+.galeria img{
+    width: 100%;
+}
+.hvgris{
+    background-color: #555555;
+    border-radius: 8px;
+    width: 250px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 100%;
+    z-index: 2;
+    padding: 20px;
+    top: 50%;
+    left: calc(50% - 125px);
+    transition: all 0.5s;
+    opacity: 0%;
+}
+.lupa{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.text1{
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+.text2{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+/*cont team member*/
+.contGris{
+    background-color: #eff2f7;
+    /*border: #333 1px solid;*/
+}
+.contTeam{
+    /*border: #333 1px solid;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.contTeam article{
+    max-width: 280px;
+    border-radius: 5px;
+    background-color: #fff;
+    border-bottom: #0c61dd 2px solid;
+    overflow: hidden;
+}
+.fotoTeam{ 
+    max-width: 280px;
+    margin: auto;
+    position: relative;
+    transition: all .5s;
+    /*border: #333 1px solid;*/
+}
+.fotoTeam img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.fondoazul{
+    width: 100%;
+    height: 98.5%;
+    background-color: rgba(13,89,221,0.8);
+    /* border: #333 1px solid;*/
+    z-index: 2;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 0%;
+    transition: all .5s;
+}
+.fotoTeam:hover .fondoazul{
+    opacity: 100%;
+    cursor: pointer;
+}
+.redes{
+    width: 55px;
+    height: 200px;
+    padding: 20px ;
+    background-color: #Fff;
+    color: #0c61dd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    z-index: 3;
+    top: calc(50% - 100px);
+    right: -55px;
+    transition: all .5s;
+}
+.fotoTeam:hover .redes{
+    right: 0%;
+}
+.iconos{
+    font-size: 20px;
+}
+.nombre{
+    font-weight: bolder;
+    text-align: center;
+    color: #000;
+    padding: 10px 0px 0px 0px;
+}
+.azul{
+    font-weight: bold;
+    text-align: center;
+    color: #0c61dd;
+    padding: 0px 0px 10px 0px;
+    font-size: 14px;
+}
+
+/*Cont Planes*/
+.planes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+.planes article{
+    max-width: 380px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: #eee 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 45px 45px 65px 45px;
+    transition: all .5s;
+}
+.planes article:hover{
+    border: #0c61dd 1px solid;
+    box-shadow: #ccc 0px 0px 10px;
+}
+.planes article:hover .parrafo{
+    border: #0c61dd 1px solid;
+    box-shadow: #ccc 0px 0px 10px;
+}
+.planes article:hover a{
+    background-color: #0c61dd;
+    color: #fff;
+    box-shadow: #ccc 0px 0px 10px;
+}
+.planes h3{
+    color: #0c61dd;
+    font-size: 24px;
+    padding: 15px 15px 5px 15px;
+}
+.parrafo{
+    vertical-align: 30px;
+    border-radius: 10px;
+    color: #7a7a7a;
+    border: #eee 1px solid;
+    text-align: center;
+    padding: 20px;
+    transition: all .5s;
+}
+.parrafo p{
+    padding: 7px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.precio{
+    color: #0c61dd;
+    padding: 10px;
+}
+.precio h1{
+    font-size: 40px;
+}
+.signo{
+    font-size: 20px;
+}
+.mes{
+    font-size: 15px;
+}
+.planes a{
+    background-color: #fff;
+    border: #0c61dd 1px solid;
+    padding: 10px 25px;
+    display: inline-block;
+    color: #7a7a7a;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 13px;
+    transition: all .5s;
+}
+
+/*CONT EFECTOS IMAGENES ZOOM*/
+.contzoom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.contzoom article{
+    max-width: 380px;
+    border: #eee 1px solid;
+}
+.fotosEscala{
+    max-width: 380px;
+    margin: auto;
+    overflow: hidden;
+}
+.fotosEscala img{
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+.fotosEscala:hover img{
+    transform: scale(1.5);
+}
+.contzoom aside{
+    max-width: 340px;
+    font-size: 15px;
+}
+.contzoom aside h3{
+    padding: 15px 0px 0px 15px;
+}
+.contzoom aside p{
+    padding: 15px 0px 0px 15px;
+}
+.contzoom aside a{
+    padding: 20px 15px;
+    /*border: #eee 1px solid;*/
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+.iconoflecha{
+    font-size: 12px;
+}
+
+@media screen and (max-width:420px){
+    .galeria:hover{
+        filter: none;
+    }
+    .ancho{
+        margin: 15px;
+    }
+    .hvgris{
+        opacity: 100%;
+    }
+    .fondoazul{
+        background-color: rgba(13,89,221,0.4);
+        opacity: 100%;
+    }
+    .fotoTeam:hover .fondoazul{
+        opacity: 100%;
+        background-color: rgba(13,89,221,0.4);
+
+    }
+    .redes{
+        right: 0px;
+    }
+    .planes article{
+        border: #0c61dd 1px solid;
+    }
+    .planes a{
+        background-color: #0c61dd;
+        color: #fff;
+    }
+}
